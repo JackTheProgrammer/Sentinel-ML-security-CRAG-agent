@@ -1,17 +1,27 @@
-# Sentinel-ML Security CRAG AI-agent
-This is a repository for the Sentinel-ML Security CRAG AI-agent, which is designed to assist in security, vulnerability check of the ML scripts -be it for training, deploying or inference.
+# 🛡️ Sentinel-ML: Security-First Agentic CRAG
+Autonomous Multi-Agent System for Auditing ML Workflows via LangGraph & Corrective RAG.
 
-## Overview
-The Sentinel-ML Security CRAG AI-agent is an intelligent agent that analyzes beginner to advanced machine learning techniques of the script at hand and identify potential security vulnerabilities in it. It is designed to help developers and security professionals ensure the safety and integrity of their ML applications.
+## 🔍 Overview
+**Sentinel-ML** is an intelligent security layer for the ML lifecycle. It doesn't just scan code; it understands the context of training, deployment, and inference scripts to intercept vulnerabilities before they reach production.
 
-## Agent flow
-### Workflow
+## 🚀 Why Sentinel-ML?
+Standard LLMs often provide insecure code snippets or hallucinate outdated security patches. Sentinel-ML solves this by treating security as a Stateful Engineering Problem, not just a prompting task.
+### 🧠 Architecture & Logic
+Sentinel-ML is not a simple wrapper. It uses a **Directed Acyclic Graph (DAG)** via LangGraph to manage the audit state:
+1. **Contextual Retrieval**: Proactively fetches framework-specific security signatures.
+2. **Corrective Grading**: Self-evaluates retrieved data quality (`GOOD`, `AMBIGUOUS`, `INCORRECT`).
+3. **Recursive Re-writing**: Dynamically optimizes queries to trigger targeted web searches when local knowledge is insufficient.
+4. **Final Security Audit**: The final reasoning gatekeeper against RCE, Model Poisoning, and Path Injection.
+
+## 📊 Agent flow
+### Node sequence
 ![Agent Workflow Diagram](output/ml_security_audit_CRAG_workflow.png "Agent Workflow Diagram")
-### Agentic nodes logical sequence
+### Internal execution flow
 ![Agentic nodes flowchart](output/agentic_nodes_logic_sequence.png "Agentic nodes flowchart")
 
-## Demonstration
-Here is an example of how to use the agent to analyze a vulnerable model loading script and provide a secure, high-performance alternative:
+## ⚡Demonstration
+**Problem**: Insecure model loading using `pickle` (Remote Code Execution risk).<br/>
+**Sentinel-ML Solution**: Seamless migration to high-performance, safe alternatives like `safetensors`.
 ```python
 res = app.invoke({
     "question": "Find vulnerabilities in this model loading script and provide a secure, high-performance alternative.",
@@ -60,13 +70,13 @@ def load_user_model(user_id):
     return load_file(str(path))
 ```
 
-## Features
-- **Vulnerability Detection**: The agent can identify common security vulnerabilities in ML scripts, such as data leakage, model poisoning, and adversarial attacks.
-- **Best Practices Recommendations**: It provides recommendations for best practices in ML security to help developers mitigate identified vulnerabilities.
-- **Automated Analysis**: The agent can automatically analyze ML scripts and provide detailed reports on potential security issues.
-- **Integration with CI/CD**: It can be integrated into continuous integration and continuous deployment (CI/CD) pipelines to ensure ongoing security checks for ML applications.
+## 🛠️ Key Capabilities
+- **Vulnerability Detection**: Identifies Data Leakage, Model Poisoning, and Adversarial Vectors.
+- **Best Practices Recommendations**: Uses CRAG to verify all recommendations against live web data.
+- **Automated Analysis**: Provides deep-dive security reports with zero manual intervention.
+- **Integration with CI/CD**: State-persistent logic designed for automated pipeline security gates.
 
-## Usage
+## 📦 Installation and setup
 To use the Sentinel-ML Security CRAG AI-agent, follow these steps:
 1. Clone the repository:
    ```bash
@@ -76,3 +86,4 @@ To use the Sentinel-ML Security CRAG AI-agent, follow these steps:
    ```bash
     pip install -r configs/requirements.txt
    ```
+3. Use the code from the jupyter notebook `notebooks/sentinel_ml_security_crag_demo.ipynb` to see the agent in action.

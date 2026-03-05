@@ -8,7 +8,7 @@ The Sentinel-ML Security CRAG AI-agent is an intelligent agent that analyzes beg
 ### Workflow
 ![Agent Workflow Diagram](output/ml_security_audit_CRAG_workflow.png "Agent Workflow Diagram")
 ### Agentic nodes logical sequence
-![Agentic nodes flowchart](output/agentic_flowchart.png "Agentic nodes flowchart")
+![Agentic nodes flowchart](output/agentic_nodes_logic_sequence.png "Agentic nodes flowchart")
 
 ## Demonstration
 Here is an example of how to use the agent to analyze a vulnerable model loading script and provide a secure, high-performance alternative:

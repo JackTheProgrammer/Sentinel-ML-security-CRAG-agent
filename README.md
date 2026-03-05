@@ -7,24 +7,8 @@ The Sentinel-ML Security CRAG AI-agent is an intelligent agent that analyzes beg
 ## Agent Workflow
 ![Agent Workflow Diagram](output/ml_security_audit_CRAG_workflow.png "Agent Workflow Diagram")
 
-## Features
-- **Vulnerability Detection**: The agent can identify common security vulnerabilities in ML scripts, such as data leakage, model poisoning, and adversarial attacks.
-- **Best Practices Recommendations**: It provides recommendations for best practices in ML security to help developers mitigate identified vulnerabilities.
-- **Automated Analysis**: The agent can automatically analyze ML scripts and provide detailed reports on potential security issues.
-- **Integration with CI/CD**: It can be integrated into continuous integration and continuous deployment (CI/CD) pipelines to ensure ongoing security checks for ML applications.
-
-## Usage
-To use the Sentinel-ML Security CRAG AI-agent, follow these steps:
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/JackTheProgrammer/Sentinel-ML-security-CRAG-agent.git
-   ```
-2. Install the required dependencies:
-   ```bash
-    pip install -r configs/requirements.txt
-   ```
-
-## Demo usage
+## Demonstration
+Here is an example of how to use the agent to analyze a vulnerable model loading script and provide a secure, high-performance alternative:
 ```python
 res = app.invoke({
     "question": "Find vulnerabilities in this model loading script and provide a secure, high-performance alternative.",
@@ -72,3 +56,20 @@ def load_user_model(user_id):
     # load_file is significantly faster than pickle and inherently safe
     return load_file(str(path))
 ```
+
+## Features
+- **Vulnerability Detection**: The agent can identify common security vulnerabilities in ML scripts, such as data leakage, model poisoning, and adversarial attacks.
+- **Best Practices Recommendations**: It provides recommendations for best practices in ML security to help developers mitigate identified vulnerabilities.
+- **Automated Analysis**: The agent can automatically analyze ML scripts and provide detailed reports on potential security issues.
+- **Integration with CI/CD**: It can be integrated into continuous integration and continuous deployment (CI/CD) pipelines to ensure ongoing security checks for ML applications.
+
+## Usage
+To use the Sentinel-ML Security CRAG AI-agent, follow these steps:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/JackTheProgrammer/Sentinel-ML-security-CRAG-agent.git
+   ```
+2. Install the required dependencies:
+   ```bash
+    pip install -r configs/requirements.txt
+   ```

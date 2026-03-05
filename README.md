@@ -14,7 +14,7 @@ The Sentinel-ML Security CRAG AI-agent is an intelligent agent that analyzes beg
 To use the Sentinel-ML Security CRAG AI-agent, follow these steps:
 1. Clone the repository:
    ```bash
-   git clone https://github.com/sentinel-ml/sentinel-ml-security-crag-ai-agent.git
+   git clone https://github.com/JackTheProgrammer/Sentinel-ML-security-CRAG-agent.git
    ```
 2. Install the required dependencies:
    ```bash

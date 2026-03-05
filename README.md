@@ -71,4 +71,4 @@ def load_user_model(user_id):
 ```
 
 ## Agent Workflow
-![Agent Workflow Diagram]("/output/ml_security_audit_CRAG_workflow.png", "Agent Workflow Diagram")
+![Agent Workflow Diagram](output/ml_security_audit_CRAG_workflow.png "Agent Workflow Diagram")

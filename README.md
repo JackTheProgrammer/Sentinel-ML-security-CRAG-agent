@@ -4,6 +4,9 @@ This is a repository for the Sentinel-ML Security CRAG AI-agent, which is design
 ## Overview
 The Sentinel-ML Security CRAG AI-agent is an intelligent agent that analyzes beginner to advanced machine learning techniques of the script at hand and identify potential security vulnerabilities in it. It is designed to help developers and security professionals ensure the safety and integrity of their ML applications.
 
+## Agent Workflow
+![Agent Workflow Diagram](output/ml_security_audit_CRAG_workflow.png "Agent Workflow Diagram")
+
 ## Features
 - **Vulnerability Detection**: The agent can identify common security vulnerabilities in ML scripts, such as data leakage, model poisoning, and adversarial attacks.
 - **Best Practices Recommendations**: It provides recommendations for best practices in ML security to help developers mitigate identified vulnerabilities.
@@ -69,6 +72,3 @@ def load_user_model(user_id):
     # load_file is significantly faster than pickle and inherently safe
     return load_file(str(path))
 ```
-
-## Agent Workflow
-![Agent Workflow Diagram](output/ml_security_audit_CRAG_workflow.png "Agent Workflow Diagram")

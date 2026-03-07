@@ -1,5 +1,5 @@
 # 🛡️ Sentinel-ML: Security-First Agentic CRAG
-Autonomous CRAG AI Agent System for Auditing ML Workflows via LangGraph & Corrective RAG.
+Autonomous AI Agent System for Auditing ML Workflows via LangGraph & Corrective RAG.
 
 ## 🔍 Overview
 **Sentinel-ML** is an intelligent security layer for the ML lifecycle. It doesn't just scan code; it understands the context of training, deployment, and inference scripts to intercept vulnerabilities before they reach production.

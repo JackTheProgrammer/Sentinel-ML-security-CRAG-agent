@@ -70,8 +70,8 @@ print("Fixed code with reduced computational cost:\n", res['fixed_code_cost_redu
 
 ### Output
 
-```python
-# Fixed code with reduced computational cost:
+```text
+Fixed code with reduced computational cost:
 from pathlib import Path
 from safetensors.torch import load_file
 
@@ -80,7 +80,7 @@ def load_user_model(user_id):
     # Minimalist path sanitization to reduce overhead
     safe_id = Path(user_id).name
     path = Path("models") / f"{safe_id}_model.safetensors"
-    
+
     # load_file is significantly faster than pickle and inherently safe
     return load_file(str(path))
 ```
